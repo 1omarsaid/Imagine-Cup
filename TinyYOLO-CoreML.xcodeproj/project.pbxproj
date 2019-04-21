@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071732A222187CCF008F6845 /* car-honk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 071732A122187CCF008F6845 /* car-honk.mp3 */; };
+		071732A422187E83008F6845 /* bike-bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 071732A322187E83008F6845 /* bike-bell.mp3 */; };
+		071732A62218A58B008F6845 /* footstep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 071732A52218A58B008F6845 /* footstep.mp3 */; };
+		071732A82218A634008F6845 /* chair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 071732A72218A634008F6845 /* chair.mp3 */; };
+		071732AA2218AAE7008F6845 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071732A92218AAE7008F6845 /* SpeechService.swift */; };
+		071732AC2218D31E008F6845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071732AB2218D31E008F6845 /* AppDelegate.swift */; };
+		071732AE2218DF3E008F6845 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071732AD2218DF3E008F6845 /* constants.swift */; };
+		0785694F21FE537E00F782B3 /* skyclad_sound_tray_plastic_small_insert_decisive_rattle_click_resonant_hollow_171.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0785694E21FE537E00F782B3 /* skyclad_sound_tray_plastic_small_insert_decisive_rattle_click_resonant_hollow_171.mp3 */; };
+		0785695121FE554D00F782B3 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0785695021FE554C00F782B3 /* test.mp3 */; };
+		0785695422014D3700F782B3 /* dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0785695322014D3700F782B3 /* dog.mp3 */; };
+		0785695622014DB700F782B3 /* bird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0785695522014DB700F782B3 /* bird.mp3 */; };
+		0785695822014F1100F782B3 /* cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0785695722014F1000F782B3 /* cat.mp3 */; };
+		07D5DE7122224EC2007FE2E4 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D5DE7022224EC2007FE2E4 /* OrderViewController.swift */; };
+		133C5708BF1E9D77F21892E5 /* Pods_TinyYOLO_CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98CD9D93BCB784210D6BFAC /* Pods_TinyYOLO_CoreML.framework */; };
+		7B9F8D4A1EF2CDA700F913BD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F8D491EF2CDA700F913BD /* Helpers.swift */; };
+		7BA1C6D01EF27DA000BB25EF /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */; };
+		7BA1C6D21EF2827800BB25EF /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */; };
+		7BA1C6D61EF2861600BB25EF /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1C6D51EF2861400BB25EF /* BoundingBox.swift */; };
+		7BA1C6D81EF2871600BB25EF /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1C6D71EF2871600BB25EF /* YOLO.swift */; };
+		7BA1C6DA1EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA1C6D91EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift */; };
+		7BA1C6DC1EF2B57200BB25EF /* dog416.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BA1C6DB1EF2B56D00BB25EF /* dog416.png */; };
+		7BC25FA41EF1B7D1002ECBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FA31EF1B7D1002ECBBA /* ViewController.swift */; };
+		7BC25FA71EF1B7D1002ECBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */; };
+		7BC25FA91EF1B7D1002ECBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC25FA81EF1B7D1002ECBBA /* Assets.xcassets */; };
+		7BC25FB41EF1CEB0002ECBBA /* TinyYOLO.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FB31EF1CEAE002ECBBA /* TinyYOLO.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		071732A122187CCF008F6845 /* car-honk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "car-honk.mp3"; sourceTree = "<group>"; };
+		071732A322187E83008F6845 /* bike-bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bike-bell.mp3"; sourceTree = "<group>"; };
+		071732A52218A58B008F6845 /* footstep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = footstep.mp3; sourceTree = "<group>"; };
+		071732A72218A634008F6845 /* chair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chair.mp3; sourceTree = "<group>"; };
+		071732A92218AAE7008F6845 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		071732AB2218D31E008F6845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		071732AD2218DF3E008F6845 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		0785694E21FE537E00F782B3 /* skyclad_sound_tray_plastic_small_insert_decisive_rattle_click_resonant_hollow_171.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = skyclad_sound_tray_plastic_small_insert_decisive_rattle_click_resonant_hollow_171.mp3; sourceTree = "<group>"; };
+		0785695021FE554C00F782B3 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		0785695322014D3700F782B3 /* dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog.mp3; sourceTree = "<group>"; };
+		0785695522014DB700F782B3 /* bird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bird.mp3; sourceTree = "<group>"; };
+		0785695722014F1000F782B3 /* cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat.mp3; sourceTree = "<group>"; };
+		07D5DE7022224EC2007FE2E4 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		1154FF2C9295EFB15DDD6609 /* Pods-TinyYOLO-CoreML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyYOLO-CoreML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML.debug.xcconfig"; sourceTree = "<group>"; };
+		4317C219FFB87D01DF947757 /* Pods-TinyYOLO-CoreML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyYOLO-CoreML.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML.release.xcconfig"; sourceTree = "<group>"; };
+		7B9F8D491EF2CDA700F913BD /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		7BA1C6D51EF2861400BB25EF /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		7BA1C6D71EF2871600BB25EF /* YOLO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
+		7BA1C6D91EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
+		7BA1C6DB1EF2B56D00BB25EF /* dog416.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog416.png; sourceTree = "<group>"; };
+		7BC25F9E1EF1B7D1002ECBBA /* TinyYOLO-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinyYOLO-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC25FA31EF1B7D1002ECBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BC25FA61EF1B7D1002ECBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BC25FA81EF1B7D1002ECBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BC25FAD1EF1B7D1002ECBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC25FB31EF1CEAE002ECBBA /* TinyYOLO.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TinyYOLO.mlmodel; sourceTree = "<group>"; };
+		7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		B98CD9D93BCB784210D6BFAC /* Pods_TinyYOLO_CoreML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyYOLO_CoreML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BC25F9B1EF1B7D1002ECBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133C5708BF1E9D77F21892E5 /* Pods_TinyYOLO_CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071732A0221859B4008F6845 /* analysis */ = {
+			isa = PBXGroup;
+			children = (
+				7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */,
+				7BA1C6DB1EF2B56D00BB25EF /* dog416.png */,
+				7BA1C6D51EF2861400BB25EF /* BoundingBox.swift */,
+				7BA1C6D91EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift */,
+				7B9F8D491EF2CDA700F913BD /* Helpers.swift */,
+				7BA1C6D71EF2871600BB25EF /* YOLO.swift */,
+				7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */,
+				7BC25FB31EF1CEAE002ECBBA /* TinyYOLO.mlmodel */,
+				071732A92218AAE7008F6845 /* SpeechService.swift */,
+			);
+			path = analysis;
+			sourceTree = "<group>";
+		};
+		0785695222014D0B00F782B3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0785694E21FE537E00F782B3 /* skyclad_sound_tray_plastic_small_insert_decisive_rattle_click_resonant_hollow_171.mp3 */,
+				0785695021FE554C00F782B3 /* test.mp3 */,
+				0785695322014D3700F782B3 /* dog.mp3 */,
+				0785695522014DB700F782B3 /* bird.mp3 */,
+				0785695722014F1000F782B3 /* cat.mp3 */,
+				071732A122187CCF008F6845 /* car-honk.mp3 */,
+				071732A322187E83008F6845 /* bike-bell.mp3 */,
+				071732A52218A58B008F6845 /* footstep.mp3 */,
+				071732A72218A634008F6845 /* chair.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		158C250E529A002FFF0216C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1154FF2C9295EFB15DDD6609 /* Pods-TinyYOLO-CoreML.debug.xcconfig */,
+				4317C219FFB87D01DF947757 /* Pods-TinyYOLO-CoreML.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A36099A2C3CFEE9F2FD37EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98CD9D93BCB784210D6BFAC /* Pods_TinyYOLO_CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BC25F951EF1B7D1002ECBBA = {
+			isa = PBXGroup;
+			children = (
+				7BC25FA01EF1B7D1002ECBBA /* TinyYOLO-CoreML */,
+				7BC25F9F1EF1B7D1002ECBBA /* Products */,
+				158C250E529A002FFF0216C7 /* Pods */,
+				2A36099A2C3CFEE9F2FD37EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BC25F9F1EF1B7D1002ECBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BC25F9E1EF1B7D1002ECBBA /* TinyYOLO-CoreML.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BC25FA01EF1B7D1002ECBBA /* TinyYOLO-CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				071732AB2218D31E008F6845 /* AppDelegate.swift */,
+				7BC25FA81EF1B7D1002ECBBA /* Assets.xcassets */,
+				071732AD2218DF3E008F6845 /* constants.swift */,
+				7BC25FA31EF1B7D1002ECBBA /* ViewController.swift */,
+				7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */,
+				071732A0221859B4008F6845 /* analysis */,
+				7BC25FAD1EF1B7D1002ECBBA /* Info.plist */,
+				0785695222014D0B00F782B3 /* sounds */,
+				07D5DE7022224EC2007FE2E4 /* OrderViewController.swift */,
+			);
+			path = "TinyYOLO-CoreML";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BC25F9D1EF1B7D1002ECBBA /* TinyYOLO-CoreML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC25FB01EF1B7D1002ECBBA /* Build configuration list for PBXNativeTarget "TinyYOLO-CoreML" */;
+			buildPhases = (
+				C4FA12221A116C108F9161EE /* [CP] Check Pods Manifest.lock */,
+				7BC25F9A1EF1B7D1002ECBBA /* Sources */,
+				7BC25F9B1EF1B7D1002ECBBA /* Frameworks */,
+				7BC25F9C1EF1B7D1002ECBBA /* Resources */,
+				94C3866D082FD414D651539B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TinyYOLO-CoreML";
+			productName = "TinyYOLO-CoreML";
+			productReference = 7BC25F9E1EF1B7D1002ECBBA /* TinyYOLO-CoreML.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BC25F961EF1B7D1002ECBBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MachineThink;
+				TargetAttributes = {
+					7BC25F9D1EF1B7D1002ECBBA = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 7BC25F991EF1B7D1002ECBBA /* Build configuration list for PBXProject "TinyYOLO-CoreML" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BC25F951EF1B7D1002ECBBA;
+			productRefGroup = 7BC25F9F1EF1B7D1002ECBBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC25F9D1EF1B7D1002ECBBA /* TinyYOLO-CoreML */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BC25F9C1EF1B7D1002ECBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071732A62218A58B008F6845 /* footstep.mp3 in Resources */,
+				0785694F21FE537E00F782B3 /* skyclad_sound_tray_plastic_small_insert_decisive_rattle_click_resonant_hollow_171.mp3 in Resources */,
+				0785695622014DB700F782B3 /* bird.mp3 in Resources */,
+				071732A222187CCF008F6845 /* car-honk.mp3 in Resources */,
+				0785695121FE554D00F782B3 /* test.mp3 in Resources */,
+				7BA1C6DC1EF2B57200BB25EF /* dog416.png in Resources */,
+				071732A82218A634008F6845 /* chair.mp3 in Resources */,
+				0785695422014D3700F782B3 /* dog.mp3 in Resources */,
+				071732A422187E83008F6845 /* bike-bell.mp3 in Resources */,
+				0785695822014F1100F782B3 /* cat.mp3 in Resources */,
+				7BC25FA91EF1B7D1002ECBBA /* Assets.xcassets in Resources */,
+				7BC25FA71EF1B7D1002ECBBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94C3866D082FD414D651539B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/UberCore/UberCore.framework",
+				"${BUILT_PRODUCTS_DIR}/UberRides/UberRides.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberRides.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinyYOLO-CoreML/Pods-TinyYOLO-CoreML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4FA12221A116C108F9161EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyYOLO-CoreML-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BC25F9A1EF1B7D1002ECBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071732AC2218D31E008F6845 /* AppDelegate.swift in Sources */,
+				7BA1C6D01EF27DA000BB25EF /* VideoCapture.swift in Sources */,
+				07D5DE7122224EC2007FE2E4 /* OrderViewController.swift in Sources */,
+				7BA1C6DA1EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift in Sources */,
+				7BC25FB41EF1CEB0002ECBBA /* TinyYOLO.mlmodel in Sources */,
+				071732AE2218DF3E008F6845 /* constants.swift in Sources */,
+				7BA1C6D21EF2827800BB25EF /* UIImage+CVPixelBuffer.swift in Sources */,
+				7B9F8D4A1EF2CDA700F913BD /* Helpers.swift in Sources */,
+				7BA1C6D61EF2861600BB25EF /* BoundingBox.swift in Sources */,
+				7BC25FA41EF1B7D1002ECBBA /* ViewController.swift in Sources */,
+				071732AA2218AAE7008F6845 /* SpeechService.swift in Sources */,
+				7BA1C6D81EF2871600BB25EF /* YOLO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC25FA61EF1B7D1002ECBBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BC25FAE1EF1B7D1002ECBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BC25FAF1EF1B7D1002ECBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BC25FB11EF1B7D1002ECBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1154FF2C9295EFB15DDD6609 /* Pods-TinyYOLO-CoreML.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3446L3GC2R;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "TinyYOLO-CoreML/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarapps.Smart-Eyes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BC25FB21EF1B7D1002ECBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4317C219FFB87D01DF947757 /* Pods-TinyYOLO-CoreML.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3446L3GC2R;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "TinyYOLO-CoreML/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omarapps.Smart-Eyes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BC25F991EF1B7D1002ECBBA /* Build configuration list for PBXProject "TinyYOLO-CoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC25FAE1EF1B7D1002ECBBA /* Debug */,
+				7BC25FAF1EF1B7D1002ECBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC25FB01EF1B7D1002ECBBA /* Build configuration list for PBXNativeTarget "TinyYOLO-CoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC25FB11EF1B7D1002ECBBA /* Debug */,
+				7BC25FB21EF1B7D1002ECBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BC25F961EF1B7D1002ECBBA /* Project object */;
+}

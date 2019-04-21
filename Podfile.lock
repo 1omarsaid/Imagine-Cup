@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.0)
+  - UberCore (0.11.0)
+  - UberRides (0.11.0):
+    - UberCore
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - UberRides (~> 0.9)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - UberCore
+    - UberRides
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  UberCore: b72013357bff720a30a1b12669e724750b775ef7
+  UberRides: d39c7c9f612d8f5ebfb69f475a553e1a54c3c4b5
+
+PODFILE CHECKSUM: b8ffa65fa4e57b69f15e00f90fa89429d5be3689
+
+COCOAPODS: 1.5.3

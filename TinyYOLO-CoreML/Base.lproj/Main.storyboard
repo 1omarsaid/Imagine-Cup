@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="TinyYOLO_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b2-uP-TiX" userLabel="Video Preview">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuu-sk-SpC">
+                                        <rect key="frame" x="0.0" y="498.5" width="320" height="25.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Uuu-sk-SpC" secondAttribute="height" multiplier="125:10" id="KMj-6g-I37"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Uuu-sk-SpC" firstAttribute="width" secondItem="6b2-uP-TiX" secondAttribute="width" id="EAh-fm-VXb"/>
+                                    <constraint firstItem="Uuu-sk-SpC" firstAttribute="centerX" secondItem="6b2-uP-TiX" secondAttribute="centerX" id="Xbb-kW-ydg"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNc-Bp-8Q7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6b2-uP-TiX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5fy-Bv-RZx"/>
+                            <constraint firstItem="YNc-Bp-8Q7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="60p-ib-nxb"/>
+                            <constraint firstItem="YNc-Bp-8Q7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6bz-aq-xU3"/>
+                            <constraint firstItem="Uuu-sk-SpC" firstAttribute="bottom" secondItem="YNc-Bp-8Q7" secondAttribute="bottom" id="9Jo-ny-OzF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YNc-Bp-8Q7" secondAttribute="bottom" constant="44" id="Ufo-Tw-jY9"/>
+                            <constraint firstAttribute="trailing" secondItem="6b2-uP-TiX" secondAttribute="trailing" id="VLN-Lj-dMD"/>
+                            <constraint firstAttribute="trailing" secondItem="YNc-Bp-8Q7" secondAttribute="trailing" id="pbH-bP-lRY"/>
+                            <constraint firstItem="6b2-uP-TiX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tQx-fh-d7D"/>
+                            <constraint firstAttribute="bottom" secondItem="6b2-uP-TiX" secondAttribute="bottom" id="xIr-G9-dgn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debugImageView" destination="YNc-Bp-8Q7" id="Efd-I1-2Hu"/>
+                        <outlet property="descriptionLabel" destination="Uuu-sk-SpC" id="G55-fs-qdB"/>
+                        <outlet property="videoPreview" destination="6b2-uP-TiX" id="F9M-LA-bjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="132"/>
+        </scene>
+    </scenes>
+</document>
